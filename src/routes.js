@@ -9,7 +9,7 @@ const routes = new Router();
 
 // ROTA TESTE
 routes.get("/teste", (req, res) => {
-  return res.status(200).json({ message: "backend works!" });
+  return res.status(200).json({ message: "backend works - julius!" });
 });
 
 // ROTA DE LOGIN SEM AUTH
@@ -18,6 +18,6 @@ routes.post("/sessions", SessionController.store);
 routes.use(authMiddleware);
 
 routes.post("/clients", ClientController.store);
-routes.pos("/clients/update", ClientController.update);
+routes.put("/clients/update", ClientController.update);
 
 export default routes;

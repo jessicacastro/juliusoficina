@@ -42,10 +42,12 @@ class SessionController {
         },
         token: jwt.sign({ id }, auth.secret, {
           expiresIn: auth.expiresIn
-        });
+        })
       });
     } catch (error) {
-      return res.status(500).json({ error: "Não foi possível encontrar o usuário."});
+      return res
+        .status(500)
+        .json({ error: "Não foi possível encontrar o usuário." });
     }
   }
 }
