@@ -9,8 +9,8 @@ class Clients extends Model {
         address: Sequelize.STRING,
         telephone: Sequelize.STRING,
         telephoneTwo: Sequelize.STRING,
-        RG: Sequelize.STRING,
-        CPF: Sequelize.STRING
+        rg: Sequelize.STRING,
+        cpf: Sequelize.STRING
       },
       {
         sequelize
