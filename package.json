@@ -6,6 +6,10 @@
   "repository": "https://github.com/jessicacastro/juliusoficina.git",
   "author": "Jessica Castro <jessica.castros@outlook.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "dev:debug": "nodemon --inspect src/server.js"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
